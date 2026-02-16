@@ -14,7 +14,7 @@ const[loading,setLoading] = useState(false);
 const handleSubmit = async ()=>{
  setLoading(true);
  try{
-  const res = await axios.post("http://localhost:8080/api/email/generate",{
+  const res = await axios.post("https://auto-email-production-2306.up.railway.app/api/email/generate",{
     emailContent,
     tone
   });
